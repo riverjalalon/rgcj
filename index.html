@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="River Geoff C. Jalalon, social media and digital marketing specialist. Strategy, design, short-form video, paid social and analytics.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>River Geoff Jalalon</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: the portfolio deck as a scrolling magazine. Blue cover band, white "pages" with mono running heads, red index tags, blue feature cards. */
+:root{
+  --blue:#2B4EEA; --blue-ink:#1F3BC4; --red:#E63B2E; --ink:#0E1530; --muted:#5B6280;
+  --bg:#FFFFFF; --surface:#F3F4F9; --card:#FFFFFF; --line:#E1E4EF; --line-strong:#0E1530;
+  --on-blue:#FFFFFF; --on-blue-soft:rgba(255,255,255,.72); --chip:#EEF0F7;
+  --green:#1E9E5A; --grey-tag:#A6ACBF;
+  --f-display:"Outfit",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"DM Sans",ui-sans-serif,system-ui,sans-serif;
+  --f-mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --maxw:1240px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --blue:#4A69FF; --blue-ink:#2B4EEA; --red:#FF5446; --ink:#ECEFFA; --muted:#9AA2C2;
+  --bg:#0B1024; --surface:#121935; --card:#151D3C; --line:#252E52; --line-strong:#ECEFFA;
+  --chip:#1C2547; --green:#3CCB7F; --grey-tag:#6D7596; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --blue:#4A69FF; --blue-ink:#2B4EEA; --red:#FF5446; --ink:#ECEFFA; --muted:#9AA2C2;
+  --bg:#0B1024; --surface:#121935; --card:#151D3C; --line:#252E52; --line-strong:#ECEFFA;
+  --chip:#1C2547; --green:#3CCB7F; --grey-tag:#6D7596; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.dot{color:var(--red)}
+.hl{color:var(--blue)}
+h1,h2,h3,h4{font-family:var(--f-display);margin:0;letter-spacing:-.025em;text-wrap:balance;line-height:1.02}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums}
+
+/* Nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.mark{display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:var(--red);color:#fff;font-family:var(--f-display);font-weight:800;font-size:15px;text-decoration:none;flex:none}
+.nav-links{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-block:0}
+.nav-links a{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:8px 10px;border-radius:8px;color:var(--muted)}
+.nav-links a:hover{color:var(--ink);background:var(--surface)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:600;font-size:15px;text-decoration:none;padding:11px 18px;border-radius:12px;border:0;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
+.nav .btn{padding:9px 14px;font-size:14px}
+@media (max-width:980px){.nav-links{display:none}.nav .btn{margin-left:auto}}
+
+/* Hero */
+.hero{background:var(--blue-ink);color:var(--on-blue);position:relative;overflow:hidden}
+:root .hero{background:#2B4EEA}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1.2px);background-size:18px 18px;mask-image:linear-gradient(to right,#000 0,transparent 40%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;padding-block:56px 0}
+.masthead{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;border-bottom:1.5px solid rgba(255,255,255,.85);padding-bottom:22px;position:relative}
+.masthead::after{content:"";position:absolute;left:0;bottom:-3px;width:120px;height:5px;background:var(--red)}
+.logo-pill{display:inline-block;background:#2E3A0C;color:#F4F21B;font-family:var(--f-display);font-weight:800;font-size:clamp(44px,8vw,84px);letter-spacing:-.04em;line-height:1;padding:.06em .28em .12em;border-radius:999px}
+.logo-pill span{color:var(--red)}
+.issue{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-align:right;line-height:2;color:var(--on-blue-soft)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding-block:44px 48px}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;padding:5px 10px;border-radius:4px;background:var(--red);color:#fff}
+.hero h1{font-size:clamp(46px,7.4vw,96px);font-weight:700;margin-top:20px;color:#fff}
+.hero h1 u{text-decoration:none;background:linear-gradient(transparent 62%,var(--red) 62%,var(--red) 88%,transparent 88%)}
+.hero .lede{font-size:clamp(17px,1.6vw,19px);max-width:52ch;margin-top:22px;color:rgba(255,255,255,.9)}
+.byline{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-top:22px}
+.byline strong{font-family:var(--f-display);font-size:20px;font-weight:700}
+.byline span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--on-blue-soft)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .btn-ghost{color:#fff}
+.portrait{position:relative;max-width:380px;justify-self:end;width:100%}
+.portrait img{border-radius:22px;width:100%;aspect-ratio:4/5;object-fit:cover;border:5px solid #fff;box-shadow:0 30px 60px -20px rgba(8,16,60,.55)}
+.float{position:absolute;background:#fff;color:#0E1530;border-radius:14px;padding:10px 14px;box-shadow:0 16px 30px -12px rgba(8,16,60,.45);font-size:13px;line-height:1.3}
+.float b{display:block;font-family:var(--f-display);font-size:22px;letter-spacing:-.02em;color:#2B4EEA}
+.float.f1{left:-36px;top:28px}
+.float.f2{right:-22px;bottom:70px}
+.float.f2 b{color:#E63B2E}
+.stamp{position:absolute;right:-14px;top:-18px;width:96px;height:96px;border-radius:50%;background:#E63B2E;color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-weight:800;line-height:.9;font-size:26px;transform:rotate(-12deg);border:3px solid #fff}
+.stamp small{display:block;font-family:var(--f-mono);font-weight:400;font-size:10px;letter-spacing:.12em;margin-top:6px}
+.hero-index{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,.4)}
+.hero-index a{text-decoration:none;padding:16px 16px 20px 0;border-right:1px solid rgba(255,255,255,.25);display:block}
+.hero-index a + a{padding-left:16px}
+.hero-index a:last-child{border-right:0}
+.hero-index .mono{font-size:11px;color:var(--on-blue-soft)}
+.hero-index b{display:block;font-family:var(--f-display);font-size:17px;margin-top:6px}
+.hero-index em{font-style:normal;font-size:13.5px;color:var(--on-blue-soft)}
+.hero-index a:hover b{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:4px}
+.hero-foot{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;border-top:1.5px solid rgba(255,255,255,.85);padding-block:16px 22px;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em}
+.live{display:inline-flex;align-items:center;gap:8px}
+.live i{width:10px;height:10px;border-radius:50%;background:#E63B2E;box-shadow:0 0 0 3px rgba(255,255,255,.35)}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{justify-self:start;max-width:320px;margin-left:30px}
+  .hero-index{grid-template-columns:1fr 1fr}
+  .hero-index a{border-right:0;border-bottom:1px solid rgba(255,255,255,.25);padding-left:0!important}
+  .issue{text-align:left}
+}
+@media (max-width:480px){.float.f1{left:-24px}.float.f2{right:-10px}.portrait{margin-left:22px;max-width:280px}}
+
+/* Section scaffolding */
+section.page{padding-block:96px 24px}
+.runhead{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em;padding-bottom:14px;border-bottom:1.5px solid var(--line-strong);position:relative;margin-bottom:28px}
+.runhead::after{content:"";position:absolute;left:0;bottom:-3px;width:88px;height:5px;background:var(--red)}
+.crumbs b{color:var(--ink);font-weight:500}
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+.idx{font-family:var(--f-mono);font-size:12px;background:var(--red);color:#fff;padding:3px 8px;border-radius:4px;letter-spacing:.06em}
+.eyebrow .mono{color:var(--ink)}
+.sec-head{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:end;margin-bottom:44px}
+.sec-head h2{font-size:clamp(36px,5.2vw,64px);font-weight:700}
+.sec-head p{color:var(--muted);font-size:17px;max-width:46ch}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr;gap:18px}}
+
+.label{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);background:var(--card);padding:4px 9px;border-radius:6px;color:var(--ink);white-space:nowrap}
+.label::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--c,var(--blue))}
+.l-client{--c:var(--blue)} .l-ins{--c:var(--green)} .l-app{--c:var(--red)} .l-con{--c:var(--grey-tag)}
+.labels{display:flex;flex-wrap:wrap;gap:8px}
+
+/* Results */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);border-block:1px solid var(--line)}
+.stat{padding:22px 20px 22px 0;border-right:1px solid var(--line)}
+.stat + .stat{padding-left:20px}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--f-display);font-size:clamp(30px,3.2vw,42px);letter-spacing:-.03em;line-height:1;font-weight:700}
+.stat span{display:block;font-size:14px;color:var(--muted);margin-top:10px;line-height:1.4}
+@media (max-width:900px){.stats{grid-template-columns:1fr 1fr}.stat{border-right:0;border-bottom:1px solid var(--line);padding-left:0!important}.stat:last-child{border-bottom:0}}
+.accounts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:36px}
+.acct{padding:0 28px;border-left:1px solid var(--line);min-width:0}
+.acct:first-child{padding-left:0;border-left:0}
+.acct-h{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+.sw{width:30px;height:30px;border-radius:7px;flex:none}
+.acct-h b{font-family:var(--f-display);font-size:18px;display:block;line-height:1.1}
+.acct-h small{font-size:13px;color:var(--muted)}
+.bar{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) 54px;gap:12px;align-items:center;font-size:14px;padding-block:5px}
+.track{height:9px;background:var(--chip);border-radius:9px;overflow:hidden}
+.track i{display:block;height:100%;border-radius:9px;background:var(--blue)}
+.track i.k{background:var(--ink)} .track i.r{background:var(--red)}
+.bar .v{font-family:var(--f-mono);font-size:12.5px;text-align:right}
+.acct p{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.5}
+@media (max-width:900px){.accounts{grid-template-columns:1fr;gap:32px}.acct{padding:0;border-left:0}}
+
+.funnel{display:flex;align-items:center;gap:8px;margin-top:52px;flex-wrap:wrap}
+.funnel .st{display:flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.funnel .st i{width:44px;height:44px;border-radius:50%;background:var(--blue);display:grid;place-items:center;box-shadow:0 0 0 5px color-mix(in srgb,var(--blue) 18%,transparent)}
+.funnel .st:last-child i{background:var(--red);box-shadow:0 0 0 5px color-mix(in srgb,var(--red) 18%,transparent)}
+.funnel .st i svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.funnel .ln{flex:1;min-width:24px;border-top:2px dotted var(--muted);opacity:.5}
+
+.tablebox{border:1px solid var(--line);border-radius:18px;padding:8px 22px 6px;margin-top:40px;background:var(--card)}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:left;font-weight:400;padding:14px 14px 12px 0;border-bottom:1.5px solid var(--line-strong)}
+td{padding:14px 14px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td b{font-family:var(--f-display);font-weight:600}
+.tbl-min{min-width:760px}
+
+/* Case studies */
+.case{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:48px;padding-block:40px 56px;border-top:1px solid var(--line)}
+.case:first-of-type{border-top:0;padding-top:0}
+.case h3{font-size:clamp(40px,4.8vw,60px);font-weight:700}
+.case .sub{color:var(--muted);margin-top:12px;max-width:44ch}
+.case .labels{margin-top:16px}
+.dl{margin-top:26px;border-top:1.5px solid var(--line-strong)}
+.dl div{display:grid;grid-template-columns:110px 1fr;gap:16px;padding-block:13px;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.5}
+.dl dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.dl dd{margin:0}
+.dl .res dt{color:var(--blue)}
+.dl .res dd{font-weight:500}
+.canvas{background:var(--surface);border-radius:24px;padding:24px;background-image:radial-gradient(color-mix(in srgb,var(--muted) 30%,transparent) 1px,transparent 1.2px);background-size:16px 16px;min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:14px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.kpi .mono{font-size:10.5px;color:var(--muted);display:flex;align-items:center;gap:7px}
+.kpi .mono::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red)}
+.kpi b{display:block;font-family:var(--f-display);font-size:32px;letter-spacing:-.03em;margin-top:8px;line-height:1}
+.kpi span{display:block;font-size:13px;color:var(--muted);margin-top:6px;line-height:1.35}
+.kpi.blue{background:var(--blue);border-color:var(--blue);color:#fff}
+.kpi.blue .mono,.kpi.blue span{color:rgba(255,255,255,.8)}
+.kpi.blue .mono::before{background:#fff}
+@media (max-width:960px){.case{grid-template-columns:1fr;gap:28px}}
+
+.shots{display:grid;gap:12px}
+.shots.two{grid-template-columns:1fr 1fr}
+.shots.phone{grid-template-columns:.85fr 1fr;align-items:center}
+.shot{margin:0;background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;position:relative;padding:0;display:block;width:100%;text-align:left;color:inherit;font:inherit}
+.shot img{width:100%;transition:transform .35s ease}
+.shot:hover img{transform:scale(1.02)}
+.shot figcaption,.shot .cap{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--muted);padding:9px 12px;border-top:1px solid var(--line);background:var(--card);position:relative}
+.shot.bare{background:transparent;border:0}
+.shot.bare .cap{background:transparent;border:0;padding-left:2px}
+@media (max-width:560px){.shots.two,.shots.phone{grid-template-columns:1fr}}
+
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.rule b{font-family:var(--f-display);font-size:16px;display:block}
+.rule span{font-size:13.5px;color:var(--muted);display:block;margin-top:4px;line-height:1.45}
+@media (max-width:700px){.rules{grid-template-columns:1fr}}
+
+/* Anatomy series */
+.anatomy{background:var(--blue);color:#fff;border-radius:28px;padding:40px;margin-top:24px;position:relative;overflow:hidden}
+:root .anatomy{background:#2B4EEA}
+.anatomy::before{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.35)}
+.anatomy-h{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px;position:relative}
+.anatomy-h h3{font-size:clamp(28px,3.4vw,42px);font-weight:700}
+.anatomy-h .mono{color:rgba(255,255,255,.75);display:block;margin-bottom:10px}
+.anat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;position:relative}
+.anat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:16px;padding:10px;cursor:zoom-in;color:#fff;text-align:left;font:inherit;display:flex;flex-direction:column;gap:10px;transition:background .2s}
+.anat:hover{background:rgba(255,255,255,.16)}
+.anat .im{aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:#fff}
+.anat .im img{width:100%;height:100%;object-fit:cover;object-position:top}
+.anat .t{display:flex;gap:8px;align-items:baseline;padding:0 2px 4px}
+.anat .t code{font-family:var(--f-mono);font-size:11px;background:#E63B2E;padding:2px 6px;border-radius:4px}
+.anat .t b{font-family:var(--f-display);font-weight:600;font-size:15px;line-height:1.2}
+.anat small{display:block;font-size:12.5px;color:rgba(255,255,255,.75);padding:0 2px 4px;line-height:1.4}
+@media (max-width:1000px){.anat-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.anat-grid{grid-template-columns:1fr 1fr}.anatomy{padding:24px}}
+
+/* Strategy */
+.strat-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+.sc{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.sc .shot{border:0;border-radius:0;border-bottom:1px solid var(--line)}
+.sc .shot img{aspect-ratio:16/9;object-fit:cover;object-position:top}
+.sc-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:10px}
+.sc-body h4{font-size:26px;font-weight:700}
+.sc-body .who{font-size:14px;color:var(--muted)}
+.sc-body ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:7px;font-size:14.5px}
+.sc-body li{padding-left:16px;position:relative;line-height:1.45}
+.sc-body li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;background:var(--blue);border-radius:1px}
+.sc-body .finding{margin-top:8px;padding-top:12px;border-top:1px solid var(--line);font-size:14px}
+.sc-body .finding .mono{color:var(--blue);font-size:11px;display:block;margin-bottom:3px}
+.sc.wide{grid-column:1/-1;display:grid;grid-template-columns:1.2fr .8fr}
+.sc.wide .shot{border-bottom:0;border-right:1px solid var(--line)}
+.sc.wide .shot img{aspect-ratio:auto}
+@media (max-width:860px){.strat-cards{grid-template-columns:1fr}.sc.wide{grid-template-columns:1fr}.sc.wide .shot{border-right:0;border-bottom:1px solid var(--line)}}
+
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px;padding-top:24px;border-top:1.5px solid var(--line-strong)}
+.principles .mono{color:var(--red);font-size:11px}
+.principles b{display:block;font-family:var(--f-display);font-size:18px;margin-top:6px}
+.principles span{font-size:14px;color:var(--muted);display:block;margin-top:4px;line-height:1.45}
+@media (max-width:860px){.principles{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.principles{grid-template-columns:1fr}}
+
+.path{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;align-items:center}
+.path span{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:10px 18px;border-radius:999px;background:var(--blue);color:#fff}
+.path span:nth-child(4n+3){background:var(--ink);color:var(--bg)}
+.path span:last-child{background:var(--red);color:#fff}
+.path i{flex:1;min-width:14px;max-width:60px;border-top:2px dotted var(--blue);opacity:.6}
+
+/* Brand */
+.brand-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.bcard{min-width:0}
+.bcard-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.bcard-h h4{font-size:26px;font-weight:700}
+.bcard-h .mono{font-size:11px;color:var(--muted)}
+.bcard .canvas{padding:14px}
+.bmeta{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;border-top:1.5px solid var(--line-strong);margin-top:14px;padding-top:12px;font-size:14px}
+.bmeta .mono{font-size:10.5px;color:var(--muted);display:block;margin-bottom:3px}
+@media (max-width:860px){.brand-grid{grid-template-columns:1fr}}
+@media (max-width:480px){.bmeta{grid-template-columns:1fr}}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;border-top:1.5px solid var(--line-strong);padding-top:20px}
+.steps .mono{color:var(--blue);font-size:11px}
+.steps b{display:block;font-family:var(--f-display);font-size:19px;margin-top:6px}
+.steps span{display:block;font-size:14px;color:var(--muted);margin-top:4px;line-height:1.45}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+.proc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:36px}
+.pbox{border:1px solid var(--line);border-radius:22px;padding:22px 24px;background:var(--card);min-width:0}
+.pbox h4{font-size:20px;font-weight:700}
+.pill{display:inline-block;font-size:12.5px;font-weight:600;padding:3px 9px;border-radius:6px;background:color-mix(in srgb,var(--blue) 12%,transparent);color:var(--blue)}
+.pill.r{background:color-mix(in srgb,var(--red) 12%,transparent);color:var(--red)}
+.pbox.blue{background:var(--blue);color:#fff;border-color:var(--blue)}
+:root .pbox.blue{background:#2B4EEA}
+.pbox.blue .mono{color:rgba(255,255,255,.75)}
+.pbox.blue ul{padding:0;margin:14px 0 0;list-style:none;display:grid;gap:10px;font-size:15px}
+.pbox.blue li{padding-left:16px;position:relative;line-height:1.45}
+.pbox.blue li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;background:#fff;border-radius:1px}
+.ifthen{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.ifthen div{border:1px solid var(--line);border-radius:16px;padding:16px 18px;background:var(--card)}
+.ifthen .mono{font-size:10.5px;color:var(--blue)}
+.ifthen b{display:block;font-family:var(--f-display);font-size:16px;margin:4px 0 6px;line-height:1.25}
+.ifthen span{font-size:14px;color:var(--muted);line-height:1.45;display:block}
+.ifthen span em{font-style:normal;font-family:var(--f-mono);font-size:10.5px;color:var(--red);letter-spacing:.1em;margin-right:4px}
+@media (max-width:900px){.proc-grid{grid-template-columns:1fr}.ifthen{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.ifthen{grid-template-columns:1fr}}
+
+/* About */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about h2{font-size:clamp(38px,5vw,62px);font-weight:700}
+.about .copy{display:grid;gap:16px;margin-top:24px;font-size:17px;color:var(--muted);max-width:56ch}
+.about .copy strong{color:var(--ink);font-weight:600}
+.otc{margin-top:28px;background:var(--blue);color:#fff;border-radius:20px;padding:22px 24px;max-width:420px}
+:root .otc{background:#2B4EEA}
+.otc .mono{font-size:11px;color:rgba(255,255,255,.75)}
+.otc p{font-family:var(--f-display);font-size:21px;line-height:1.3;margin-top:10px;font-weight:500}
+.otc small{display:block;margin-top:8px;color:rgba(255,255,255,.75);font-size:14px}
+.side-cards{display:grid;gap:16px;align-content:start}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ms{border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:var(--card)}
+.ms .mono{font-size:10.5px;color:var(--muted)}
+.ms b{display:block;font-family:var(--f-display);font-size:34px;letter-spacing:-.03em;line-height:1;margin-top:6px}
+.listbox{border:1px solid var(--line);border-radius:20px;padding:18px 22px;background:var(--card)}
+.listbox > .mono{font-size:11px;color:var(--muted);display:block;margin-bottom:6px}
+.row{display:grid;grid-template-columns:1fr auto;gap:14px;padding-block:9px;border-top:1px solid var(--line);font-size:14.5px;align-items:baseline}
+.row small{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+.row b{font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;padding:4px 10px;border-radius:7px;background:var(--chip)}
+.tools .row{grid-template-columns:110px 1fr;align-items:start}
+.tools .row > span:first-child{font-size:14px;color:var(--muted);padding-top:3px}
+.plats{display:flex;flex-wrap:wrap;gap:8px}
+.plats span{font-family:var(--f-display);font-weight:700;font-size:14px;width:46px;height:40px;display:grid;place-items:center;border-radius:9px;background:var(--ink);color:var(--bg)}
+.plats span:nth-child(3n+2){background:var(--blue);color:#fff}
+.about > *,.row > *,.side-cards > *{min-width:0}
+@media (max-width:960px){.about{grid-template-columns:minmax(0,1fr);gap:36px}}
+@media (max-width:480px){.tools .row{grid-template-columns:1fr;gap:6px}.mini-stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Experience timeline */
+.xp{display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px solid var(--line-strong)}
+.xp > div{padding:20px 22px 24px 0;border-right:1px solid var(--line);min-width:0}
+.xp > div + div{padding-left:22px}
+.xp > div:last-child{border-right:0}
+.xp .mono{font-size:10.5px;color:var(--muted)}
+.xp h4{font-size:22px;font-weight:700;margin-top:8px}
+.xp .org{font-size:13.5px;color:var(--muted)}
+.xp .role{font-family:var(--f-display);font-weight:600;color:var(--blue);margin-top:12px;font-size:15.5px}
+.xp ul{padding:0;margin:10px 0 0;list-style:none;display:grid;gap:7px;font-size:14px}
+.xp li{padding-left:15px;position:relative;line-height:1.45}
+.xp li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;background:var(--blue)}
+@media (max-width:960px){.xp{grid-template-columns:1fr 1fr}.xp > div{border-right:0;border-bottom:1px solid var(--line);padding-left:0!important}}
+@media (max-width:560px){.xp{grid-template-columns:1fr}}
+
+.gantt{border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin-top:28px;background:var(--card)}
+.gantt-h{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.gantt-h h4{font-size:19px;font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.g-inner{min-width:680px}
+.g-row{display:grid;grid-template-columns:220px 1fr;align-items:center;font-size:13.5px;height:28px;border-bottom:1px dashed var(--line)}
+.g-row:last-child{border-bottom:0}
+.g-lane{position:relative;height:100%}
+.g-lane i{position:absolute;top:9px;height:10px;border-radius:6px}
+.g-axis{display:grid;grid-template-columns:220px 1fr;font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-bottom:6px}
+.g-axis .ticks{position:relative;height:16px}
+.g-axis .ticks span{position:absolute;transform:translateX(0)}
+
+/* Contact */
+.contact{background:var(--blue-ink);color:#fff;margin-top:96px}
+:root .contact{background:#2B4EEA}
+.contact .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;padding-block:88px}
+.contact h2{font-size:clamp(52px,8vw,112px);font-weight:700;color:#fff;line-height:.95}
+.contact h2 .dot{color:#E63B2E}
+.contact .intro{font-size:18px;margin-top:24px;max-width:52ch;color:rgba(255,255,255,.88)}
+.contact .chips{margin-top:20px}
+.contact .chips span{background:rgba(255,255,255,.14);color:#fff}
+.cstats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px solid rgba(255,255,255,.8);margin-top:44px}
+.cstats div{padding:16px 14px 0 0}
+.cstats b{display:block;font-family:var(--f-display);font-size:34px;letter-spacing:-.03em;line-height:1}
+.cstats span{font-size:13px;color:rgba(255,255,255,.75);display:block;margin-top:6px;line-height:1.35}
+.ccard{background:#fff;color:#0E1530;border-radius:26px;padding:26px 28px;align-self:start}
+.ccard-h{display:flex;gap:14px;align-items:center;padding-bottom:18px;border-bottom:1px solid #E1E4EF}
+.ccard-h img{width:62px;height:62px;border-radius:50%;object-fit:cover;object-position:top}
+.ccard-h b{font-family:var(--f-display);font-size:20px;display:block}
+.ccard-h small{font-size:13px;color:#5B6280}
+.cline{padding-block:13px;border-bottom:1px solid #E1E4EF;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.cline .mono{font-size:10.5px;color:#5B6280;display:block}
+.cline a,.cline span.val{font-family:var(--f-display);font-weight:600;font-size:16.5px;text-decoration:none;word-break:break-word;user-select:all}
+.cline a:hover{color:#2B4EEA}
+.copy-btn{flex:none;font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #E1E4EF;background:#F3F4F9;color:#0E1530;border-radius:8px;padding:7px 10px;cursor:pointer}
+.copy-btn:hover{border-color:#2B4EEA;color:#2B4EEA}
+.ccard .btn{width:100%;justify-content:space-between;margin-top:18px}
+.ccard .note{font-size:12.5px;color:#5B6280;margin-top:10px}
+@media (max-width:900px){.contact .wrap{grid-template-columns:1fr}.cstats{grid-template-columns:1fr 1fr;gap:12px 0}}
+footer{background:var(--blue-ink);color:rgba(255,255,255,.75);font-family:var(--f-mono);font-size:12px}
+:root footer{background:#2B4EEA}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-block:20px 28px;border-top:1px solid rgba(255,255,255,.3)}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(6,10,30,.9);display:flex;align-items:center;justify-content:center;padding:max(24px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(24px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));flex-direction:column;gap:12px}
+.lb[hidden]{display:none}
+.lb img{max-height:84vh;max-width:min(1400px,100%);width:auto;border-radius:10px;background:#fff}
+.lb p{color:#fff;font-family:var(--f-mono);font-size:12.5px;text-align:center;max-width:80ch}
+.lb button{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:calc(14px + env(safe-area-inset-right,0px));background:#fff;color:#0E1530;border:0;border-radius:10px;padding:9px 14px;font-family:var(--f-mono);font-size:12px;cursor:pointer;letter-spacing:.08em}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;z-index:120}
+</style>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Back to top">RG</a>
+    <ul class="nav-links">
+      <li><a href="#results">Results</a></li>
+      <li><a href="#work">Client work</a></li>
+      <li><a href="#strategy">Strategy</a></li>
+      <li><a href="#brand">Brand</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+    <a class="btn btn-red" href="#contact">Let's talk →</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="masthead">
+      <div class="logo-pill">Portfolio<span>.</span></div>
+      <div class="issue">Issue 01 · November 2026<br>Social media &amp; digital marketing<br>Davao City, PH · Works remotely</div>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <span class="tag">Cover story</span>
+        <h1>Content people choose to <u>stay with</u><span class="dot">.</span></h1>
+        <p class="lede">Social media built on how people actually think and scroll. Strategy, design, short-form video, paid and analytics, from one person.</p>
+        <div class="byline"><strong>River Geoff C. Jalalon</strong><span>Social media &amp; digital marketing specialist</span></div>
+        <div class="hero-cta">
+          <a class="btn btn-red" href="#work">See the work →</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="img/portrait.jpg" alt="Portrait of River Geoff Jalalon" width="446" height="370">
+        <div class="stamp">No.<br>01<small>2026</small></div>
+        <div class="float f1"><b class="num">1.68→3.26%</b>IG interaction rate, one month</div>
+        <div class="float f2"><b class="num">+240%</b>Instagram followers</div>
+      </div>
+    </div>
+    <div class="hero-index">
+      <a href="#about"><span class="mono">01</span><b>Profile</b><em>The person behind the pixels</em></a>
+      <a href="#work"><span class="mono">03</span><b>Client work</b><em>A clinic, a clinical AI brand, a matcha bar</em></a>
+      <a href="#strategy"><span class="mono">04</span><b>Strategy</b><em>Given a brief, what I hand back</em></a>
+      <a href="#brand"><span class="mono">05</span><b>Brand &amp; design</b><em>Feeds that feel like the product</em></a>
+      <a href="#cv"><span class="mono">07</span><b>Files &amp; CV</b><em>Everything else, on request</em></a>
+    </div>
+    <div class="hero-foot">
+      <span>hi.rgworks@gmail.com</span><span>@rvg.works</span><span>+63 945 780 0905</span>
+      <span class="live"><i></i>Open to remote, hybrid &amp; onsite</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- RESULTS -->
+<section class="page" id="results">
+  <div class="wrap">
+    <div class="runhead"><span class="crumbs">River Geoff Jalalon / <b>Results at a glance</b></span><span>Platform analytics, Meta Ads Manager and campaign trackers</span></div>
+    <div class="eyebrow"><span class="idx">02</span><span class="mono">Results at a glance</span><span class="label l-ins">Updated Nov 2026</span></div>
+    <div class="sec-head">
+      <h2>Numbers that moved, and the <span class="hl">decisions behind them</span><span class="dot">.</span></h2>
+      <p>Each number sits next to its own baseline: the same account before I started. One post can carry a month, so I name the format behind every spike.</p>
+    </div>
+    <div class="stats num">
+      <div class="stat"><b class="hl">1.68→3.26%</b><span>IG interaction rate, nearly doubled in one month</span></div>
+      <div class="stat"><b>65K+</b><span>accounts reached through paid social</span></div>
+      <div class="stat"><b>+240%</b><span>Instagram follower growth, 350 → 1,200</span></div>
+      <div class="stat"><b>300+</b><span>posts, Reels and graphics produced</span></div>
+      <div class="stat"><b style="color:var(--red)">32→48%</b><span>email open rate after 10+ A/B tests</span></div>
+    </div>
+
+    <div class="accounts">
+      <div class="acct">
+        <div class="acct-h"><span class="sw" style="background:#6B4A2E"></span><div><b>The Wellness London</b><small>Doctor-led clinic · UK · Aug–Oct 2026</small></div></div>
+        <div class="bar"><span>IG content views</span><span class="track"><i style="width:100%"></i></span><span class="v">27,576</span></div>
+        <div class="bar"><span>Paid reach · 1.9% CTR</span><span class="track"><i class="k" style="width:100%"></i></span><span class="v">40K+</span></div>
+        <div class="bar"><span>TikTok post views</span><span class="track"><i style="width:100%"></i></span><span class="v">69.8K</span></div>
+        <div class="bar"><span>Total reach growth</span><span class="track"><i class="r" style="width:65%"></i></span><span class="v">+65%</span></div>
+        <p>27,576 views beat the previous five months combined · 12+ posts a week · 8 weekly reports</p>
+      </div>
+      <div class="acct">
+        <div class="acct-h"><span class="sw" style="background:var(--blue)"></span><div><b>Wai · clinical AI</b><small>B2B healthcare · US · Aug–Oct 2026</small></div></div>
+        <div class="bar"><span>LinkedIn impressions</span><span class="track"><i style="width:100%"></i></span><span class="v">15K+</span></div>
+        <div class="bar"><span>LinkedIn engagement</span><span class="track"><i class="k" style="width:42%"></i></span><span class="v">4.2%</span></div>
+        <div class="bar"><span>Creators pitched · 25% reply</span><span class="track"><i style="width:80%"></i></span><span class="v">80+</span></div>
+        <div class="bar"><span>Open rate after A/B tests</span><span class="track"><i class="r" style="width:48%"></i></span><span class="v">48%</span></div>
+        <p>6 qualified partnership leads · title-card video drove 95% of TikTok views</p>
+      </div>
+      <div class="acct">
+        <div class="acct-h"><span class="sw" style="background:#2E6A1F"></span><div><b>Sonder Matcha</b><small>F&amp;B brand · PH · Oct 2024 – Aug 2026</small></div></div>
+        <div class="bar"><span>IG followers 350 → 1,200</span><span class="track"><i style="width:100%"></i></span><span class="v">+240%</span></div>
+        <div class="bar"><span>Meta Ads reach · 2.4% CTR</span><span class="track"><i class="k" style="width:62%"></i></span><span class="v">25K+</span></div>
+        <div class="bar"><span>Influencer views · 12 collabs</span><span class="track"><i style="width:50%"></i></span><span class="v">20K+</span></div>
+        <div class="bar"><span>FB views from one story</span><span class="track"><i class="r" style="width:49.5%"></i></span><span class="v">49.5%</span></div>
+        <p>11,693 IG views in a month at 3.7% interaction · FB followers +150%</p>
+      </div>
+    </div>
+
+    <div class="funnel" aria-label="Seen, stopped, saved, followed, booked">
+      <div class="st"><i><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></i>Seen</div><span class="ln"></span>
+      <div class="st"><i><svg viewBox="0 0 24 24"><path d="M7 11V6a1.5 1.5 0 013 0v5M10 10V4.5a1.5 1.5 0 013 0V10M13 10V5.5a1.5 1.5 0 013 0V12M16 9a1.5 1.5 0 013 0v5a7 7 0 01-7 7h-1a6 6 0 01-5-3l-2.5-4.5a1.5 1.5 0 012.5-1.5L7 14"/></svg></i>Stopped</div><span class="ln"></span>
+      <div class="st"><i><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg></i>Saved</div><span class="ln"></span>
+      <div class="st"><i><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></i>Followed</div><span class="ln"></span>
+      <div class="st"><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Booked</div>
+    </div>
+
+    <div class="tablebox scroll-x">
+      <table class="tbl-min">
+        <thead><tr><th>Test · one variable</th><th>Account</th><th>Baseline</th><th>Result</th><th>Next move</th></tr></thead>
+        <tbody>
+          <tr><td><b>Reels-first plan</b></td><td>The Wellness · IG</td><td class="num">IR 1.68%</td><td><b>IR 3.26%</b> · Reels earn ~2.2× the interactions per view of posts</td><td>Keep Reels leading</td></tr>
+          <tr><td><b>Native-language hook</b></td><td>Sonder · IG</td><td>Next-best Reel 1.2K views</td><td><b>2.1K views · 18% of the month</b> from one Filipino-hook Reel</td><td>Repeat the format weekly</td></tr>
+          <tr><td><b>Subject lines &amp; cohorts</b></td><td>Wai · email + outreach</td><td class="num">32% open rate</td><td><b>48% open rate (+50%)</b> across 10+ logged tests</td><td>Feed winners into the next plan</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT WORK -->
+<section class="page" id="work">
+  <div class="wrap">
+    <div class="runhead"><span class="crumbs">River Geoff Jalalon / <b>Client work</b></span><span>Full reports &amp; assets on request</span></div>
+    <div class="eyebrow"><span class="idx">03</span><span class="mono">Client work</span></div>
+    <div class="sec-head">
+      <h2>Real accounts, real numbers, <span class="hl">one way of working</span><span class="dot">.</span></h2>
+      <p>Every case carries a label so you know what kind of work it is: client work, insights read straight from platform analytics, applications, or self-initiated concepts.</p>
+    </div>
+
+    <!-- Wellness -->
+    <article class="case">
+      <div>
+        <span class="mono" style="color:var(--muted)">03.1 · Case</span>
+        <h3 style="margin-top:10px">The Wellness London<span class="dot">.</span></h3>
+        <p class="sub">Feed system, carousels, short-form and paid support for a doctor-led health clinic in London.</p>
+        <div class="labels"><span class="label l-client">Client</span><span class="label l-ins">Insights</span></div>
+        <dl class="dl">
+          <div><dt>Context</dt><dd>A clinic selling consultations, treatments and nutrition, with a feed that didn't yet read as one brand.</dd></div>
+          <div><dt>Objective</dt><dd>A calm, premium feed that still drives bookings, plus more reach from short-form.</dd></div>
+          <div><dt>My role</dt><dd><b>New Media &amp; Content Executive</b> · remote, Aug–Oct 2026. Publishing, calendars, asset libraries, audits, A/B tests, weekly readout.</dd></div>
+          <div><dt>Approach</dt><dd>Pillar-tagged posts, a grid blocked by tone, familiar UI as hooks, and a Reels-first calendar.</dd></div>
+          <div><dt>Delivered</dt><dd>9-post feed system · 25+ carousels and thumbnails · 15+ short videos · newsletters · 8 weekly reports · 5-competitor benchmark · 90-day roadmap</dd></div>
+          <div class="res"><dt>Results</dt><dd>IR 1.68% → 3.26% · reach +65% · paid reach 40K+ at 1.9% CTR · 69.8K TikTok views in 27 days</dd></div>
+        </dl>
+      </div>
+      <div class="canvas">
+        <div class="shots phone">
+          <button class="shot bare" data-cap="@thewellness.london profile with the 9-post feed system"><img src="img/wellness-phone.jpg" alt="Instagram profile mockup for The Wellness London" loading="lazy"></button>
+          <div class="kpis" style="grid-template-columns:1fr;margin:0">
+            <div class="kpi"><span class="mono">IG interaction rate</span><b class="hl num">3.26%</b><span>from 1.68% · +94%</span></div>
+            <div class="kpi"><span class="mono">Daily IG views</span><b class="num">~4.7×</b><span>vs the ~5 months before</span></div>
+            <div class="kpi"><span class="mono">Total reach</span><b class="num">+65%</b><span>27,576 views beat the 5 months before combined</span></div>
+            <div class="kpi blue"><span class="mono">Paid social reach</span><b class="num">40K+</b><span>accounts at a 1.9% CTR · specs, copy and UTMs checked pre-launch</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="shots two" style="margin-top:-24px;margin-bottom:12px">
+      <button class="shot" data-cap="Feed system: 4 sell, 3 connect, 2 sustain. No two same-tone blocks share an edge."><img src="img/wellness-grid.jpg" alt="The Wellness London 3 by 3 grid" loading="lazy"><span class="cap">03.2 · Four posts sell. Five earn the right to.</span></button>
+      <div class="pbox" style="align-self:start">
+        <span class="mono" style="color:var(--muted)">Tone map rules</span>
+        <div class="rules" style="grid-template-columns:1fr;margin-top:10px">
+          <div class="rule"><b>No matching neighbours.</b><span>No two same-tone blocks share an edge.</span></div>
+          <div class="rule"><b>One light frame per row,</b><span>so the eye has a place to rest.</span></div>
+          <div class="rule"><b>Warm accents stay apart</b><span>across rows and columns.</span></div>
+        </div>
+        <div class="stats num" style="grid-template-columns:repeat(3,1fr);margin-top:16px;border:0">
+          <div class="stat" style="border:0;padding:0"><b>4<small style="font-size:16px;color:var(--muted)">/9</small></b><span>Sell</span></div>
+          <div class="stat" style="border:0;padding:0"><b>3<small style="font-size:16px;color:var(--muted)">/9</small></b><span>Connect</span></div>
+          <div class="stat" style="border:0;padding:0"><b>2<small style="font-size:16px;color:var(--muted)">/9</small></b><span>Sustain</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="shots" style="margin-bottom:56px">
+      <button class="shot" data-cap="Carousel library: hook, one idea per slide, a next step"><img src="img/wellness-library.jpg" alt="The inflammation marker carousel, six slides" loading="lazy"><span class="cap">03.3 · The inflammation marker · health explainer · 6 slides</span></button>
+      <button class="shot" data-cap="More carousel sets: statistic-led, conversation starter, trend response, numbered checklist"><img src="img/wellness-library-2.jpg" alt="Four more carousel sets" loading="lazy"><span class="cap">Statistic-led · Conversation starter · Trend response · Numbered checklist</span></button>
+    </div>
+
+    <!-- Wai -->
+    <article class="case">
+      <div>
+        <span class="mono" style="color:var(--muted)">03.5 · Case</span>
+        <h3 style="margin-top:10px">Wai<span class="dot">.</span></h3>
+        <p class="sub">LinkedIn, TikTok and creator outreach for a US clinical AI tool used by healthcare professionals.</p>
+        <div class="labels"><span class="label l-client">Client</span><span class="label l-ins">Insights</span></div>
+        <dl class="dl">
+          <div><dt>Context</dt><dd>A busy, evidence-led audience that rewards clarity and ignores hype.</dd></div>
+          <div><dt>Objective</dt><dd>Earn clinician trust and followers on LinkedIn, test short video on TikTok, line up US creators.</dd></div>
+          <div><dt>My role</dt><dd><b>New Media &amp; Content Executive</b> · remote, Aug–Oct 2026, alongside The Wellness.</dd></div>
+          <div><dt>Approach</dt><dd>Statistic-led hooks, product UI shown in context, and a creator pipeline from research to tracked follow-ups.</dd></div>
+          <div><dt>Delivered</dt><dd>Launch carousels · infographics · thumbnails · short videos · LinkedIn posts · film stills · CRM-staged creator tracker · SOPs</dd></div>
+          <div class="res"><dt>Results</dt><dd>15K+ LinkedIn impressions at 4.2% engagement · open rates 32% → 48% · 6 qualified partner leads</dd></div>
+        </dl>
+      </div>
+      <div class="canvas">
+        <button class="shot bare" data-cap="Wai launch carousels: lead with their number, show the product working"><img src="img/wai-carousels.jpg" alt="Six Wai carousel slides" loading="lazy"></button>
+        <div class="kpis">
+          <div class="kpi"><span class="mono">LinkedIn impressions</span><b class="num">15K+</b><span>at a 4.2% engagement rate</span></div>
+          <div class="kpi"><span class="mono">Open rate</span><b class="hl num">32→48%</b><span>+50% across 10+ A/B tests</span></div>
+          <div class="kpi"><span class="mono">Creators pitched</span><b class="num">80+</b><span>25% reply · 6 qualified leads</span></div>
+          <div class="kpi blue"><span class="mono">TikTok title card</span><b class="num">95%</b><span>5,744 of 6,044 views</span></div>
+        </div>
+      </div>
+    </article>
+    <div class="shots two" style="margin-top:-24px;margin-bottom:56px">
+      <button class="shot" data-cap="A 30-second app walkthrough for the clinic, concept, script and edit"><img src="img/film.jpg" alt="App walkthrough video still" loading="lazy"><span class="cap">03.6 · Made to be watched, then trusted · 30s app walkthrough</span></button>
+      <div class="pbox">
+        <span class="mono" style="color:var(--muted)">Creator outreach pipeline · Wai</span>
+        <div class="row" style="margin-top:10px"><span><b>1 · Research</b><br><span style="color:var(--muted);font-size:14px">US creators whose audiences match clinicians and health-curious followers.</span></span></div>
+        <div class="row"><span><b>2 · Shortlist on fit</b><br><span style="color:var(--muted);font-size:14px">Score on who watches them, not follower count.</span></span></div>
+        <div class="row"><span><b>3 · Personal outreach</b><br><span style="color:var(--muted);font-size:14px">Each email references the creator's own work.</span></span></div>
+        <div class="row"><span><b>4 · Tracker + response log</b><br><span style="color:var(--muted);font-size:14px">Every touchpoint logged, every follow-up on time.</span></span></div>
+      </div>
+    </div>
+
+    <!-- Sonder -->
+    <article class="case">
+      <div>
+        <span class="mono" style="color:var(--muted)">03.7 · Case</span>
+        <h3 style="margin-top:10px">Sonder Matcha<span class="dot">.</span></h3>
+        <p class="sub">A slow-bar home station, from identity to feed. Built on "moments between moments".</p>
+        <div class="labels"><span class="label l-client">Client</span><span class="label l-ins">Insights</span></div>
+        <dl class="dl">
+          <div><dt>Context</dt><dd>A home matcha station in Rosario, Agusan del Sur, selling by DM, pickup and delivery.</dd></div>
+          <div><dt>Objective</dt><dd>An identity that makes slowing down part of the drink, and a feed that turns views into orders.</dd></div>
+          <div><dt>My role</dt><dd><b>Social Media Manager</b> · onsite, Oct 2024 – Aug 2026. Concept, captions, product visuals, shoot, edit, DMs.</dd></div>
+          <div><dt>Approach</dt><dd>Minimal, soft, natural greens. Stories written like texts from a friend. Hooks in the audience's own language.</dd></div>
+          <div><dt>Delivered</dt><dd>Logo · menu · signage · posters · 60+ short videos · 150+ graphics · 10+ Meta Ads campaigns · 12 influencer collabs</dd></div>
+          <div class="res"><dt>Results</dt><dd>IG followers 350 → 1,200 (+240%) · FB +150% · ads reached 25K+ at 2.4% CTR · 11,693 IG views in a month</dd></div>
+        </dl>
+      </div>
+      <div class="canvas">
+        <button class="shot bare" data-cap="Sonder identity: wordmark, signage, poster, menu and palette. A chasen crosses the ø; the full stop is a matcha bowl."><img src="img/sonder.jpg" alt="Sonder Matcha identity collage" loading="lazy"></button>
+        <div class="kpis">
+          <div class="kpi"><span class="mono">IG followers</span><b class="num">+240%</b><span>350 → 1,200</span></div>
+          <div class="kpi"><span class="mono">Meta Ads</span><b class="num">25K+</b><span>accounts reached · 2.4% CTR</span></div>
+          <div class="kpi blue"><span class="mono">One story post</span><b class="num">49.5%</b><span>of FB views, 4.7× the next post</span></div>
+        </div>
+      </div>
+    </article>
+    <div class="shots two" style="margin-top:-24px">
+      <button class="shot" data-cap="Story rules: five frames, blue = brand, grey = customer, one ask per frame"><img src="img/sonder-stories.jpg" alt="Five Sonder Instagram Stories" loading="lazy"><span class="cap">03.8 · Chat bubbles, handwriting and real product · Stories = 26.5% of views</span></button>
+      <button class="shot" data-cap="How to tell good matcha: colour, whisk, aroma, texture, taste, aftertaste"><img src="img/sonder-matcha.jpg" alt="How to tell good matcha carousel, 8 slides" loading="lazy"><span class="cap">How to tell good matcha · education · 8 slides · 3:4</span></button>
+    </div>
+
+    <!-- Anatomy -->
+    <div class="anatomy" id="anatomy">
+      <div class="anatomy-h">
+        <div><span class="mono">The anatomy series</span><h3>Six formats, taken apart pin by pin.</h3></div>
+        <p style="max-width:40ch;color:rgba(255,255,255,.8);font-size:15px">Every element annotated with the job it does. Tap a format to see the full breakdown.</p>
+      </div>
+      <div class="anat-grid">
+        <button class="anat" data-src="img/wellness-grid.jpg" data-cap="A1 · Feed post · Booking made easy: the centre post that sells. The main booking CTA sits mid-grid, where every profile visit lands."><span class="im"><img src="img/wellness-grid.jpg" alt="" loading="lazy"></span><span class="t"><code>A1</code><b>Feed post</b></span><small>The centre post that sells</small></button>
+        <button class="anat" data-src="img/wellness-carousel-cover.jpg" data-cap="A2 · Carousel cover · Slide 1 decides whether anyone swipes. Two-line problem, colour-switch reframe, eye contact, hard split."><span class="im"><img src="img/wellness-carousel-cover.jpg" alt="" loading="lazy"></span><span class="t"><code>A2</code><b>Carousel cover</b></span><small>Slide 1 decides the swipe</small></button>
+        <button class="anat" data-src="img/sonder-story.jpg" data-cap="A3 · Instagram Story · An order update that reads like a text from a friend. Honest note: next time I'd lift the location sticker ~150px."><span class="im"><img src="img/sonder-story.jpg" alt="" loading="lazy"></span><span class="t"><code>A3</code><b>Instagram Story</b></span><small>A text from a friend</small></button>
+        <button class="anat" data-src="img/express-ad.jpg" data-cap="A4 · Paid social ad · Dishes still dirty? Give first, then ask. Primary text gives two free checks, one red button, a real technician."><span class="im"><img src="img/express-ad.jpg" alt="" loading="lazy"></span><span class="t"><code>A4</code><b>Paid social ad</b></span><small>Give first, then ask</small></button>
+        <button class="anat" data-src="img/reel.jpg" data-cap="A5 · Short-form reel · Little Dragons: a UGC interface reel. 27.5s, 6 beats, 9:16 at 30fps, −14.4 LUFS. Claims stay honest."><span class="im"><img src="img/reel.jpg" alt="" loading="lazy"></span><span class="t"><code>A5</code><b>Short-form reel</b></span><small>A 27.5s interface reel</small></button>
+        <button class="anat" data-src="img/eumora.jpg" data-cap="A6 · Logo system · The Threshold Mark: an E drawn like a floor plan. Wall 1/10, door 4/10, tested at 48, 28 and 16px."><span class="im"><img src="img/eumora.jpg" alt="" loading="lazy"></span><span class="t"><code>A6</code><b>Logo system</b></span><small>An E drawn like a floor plan</small></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section class="page" id="strategy">
+  <div class="wrap">
+    <div class="runhead"><span class="crumbs">River Geoff Jalalon / <b>Strategy &amp; applications</b></span><span>Public data only, dated where captured</span></div>
+    <div class="eyebrow"><span class="idx">04</span><span class="mono">Strategy &amp; applications</span></div>
+    <div class="sec-head">
+      <h2>Given a brief, <span class="hl">here's what I hand back</span><span class="dot">.</span></h2>
+      <p>Audits, plans, briefs and creative written for real companies during hiring. There are no client results here, so every piece says what's public, what's proposed and what still needs private analytics.</p>
+    </div>
+
+    <div class="scroll-x">
+      <table class="tbl-min">
+        <thead><tr><th>Project</th><th>Label</th><th>Brief</th><th>Delivered</th></tr></thead>
+        <tbody>
+          <tr><td><b>Express Repair</b><br><small style="color:var(--muted)">Appliance repair · Toronto &amp; GTA</small></td><td><span class="label l-app">Application</span></td><td>Run organic and paid social for a Social Media Specialist role</td><td>Captions, promo week, hashtags, $20 boost, audit, ad mock-up, lead-campaign read, 90-day plan</td></tr>
+          <tr><td><b>Jin Kimchi</b><br><small style="color:var(--muted)">Founder-led F&amp;B · Singapore</small></td><td><span class="label l-app">Assessment</span></td><td>Creative Marketing Manager: samples, references, briefs, strategy</td><td>6 videos reviewed, 7 references, 3 production-ready briefs, 90-day plan and workflow</td></tr>
+          <tr><td><b>My Oahu Agent</b><br><small style="color:var(--muted)">Real estate · Hawaii</small></td><td><span class="label l-app">Proposal</span></td><td>A social audit and first-month strategy</td><td>Six-surface audit, five testable levers, repurposing engine, sample Shorts, tracker</td></tr>
+          <tr><td><b>The Karate Institute</b><br><small style="color:var(--muted)">Kids' martial arts · Peakhurst</small></td><td><span class="label l-app">Assessment</span></td><td>A UGC-style reel for parents of 4–7 year olds</td><td>27.5-second interface reel in six beats, with edit timeline and sound mix</td></tr>
+          <tr><td><b>Care &amp; Bloom · Trident Digital</b><br><small style="color:var(--muted)">Brand house · personal brands</small></td><td><span class="label l-app">Pitch</span></td><td>Social strategist and personal-brand strategist roles</td><td>Category research, brand playbooks, hook concepts, positioning, 30- and 90-day plans</td></tr>
+          <tr><td><b>Influencer &amp; podcast</b><br><small style="color:var(--muted)">Creator partnerships · podcast growth</small></td><td><span class="label l-con">Sample data</span></td><td>Show the creator-sourcing workflow and a podcast rebrand</td><td>CPM-priced creator shortlist, outreach scripts, funnel with simulated numbers</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="strat-cards">
+      <article class="sc">
+        <button class="shot" data-cap="Express Repair ad mock-up, annotated: give first, then ask"><img src="img/express-ad.jpg" alt="Express Repair Facebook ad mock-up" loading="lazy" style="aspect-ratio:16/9;object-position:center 40%"></button>
+        <div class="sc-body">
+          <div class="labels"><span class="label l-app">Application</span></div>
+          <h4>Express Repair<span class="dot">.</span></h4>
+          <p class="who">Organic plan and a Meta lead campaign for a Toronto appliance repair company. Brand voice: <b>No stress. Call Express.</b></p>
+          <ul>
+            <li>Washer Repair Promo Week: awareness → education → proof → price → urgency</li>
+            <li>$20 CAD boost split into four $5 days for a clean read</li>
+            <li>Recomputed cost per lead from spend ÷ leads, ranked sets, then moved budget</li>
+          </ul>
+          <div class="finding"><span class="mono">Finding</span>The results table printed the wrong CPL for two ad sets. B was really <b>$13.89</b>, C was <b>$93.33</b>.</div>
+        </div>
+      </article>
+      <article class="sc">
+        <button class="shot" data-cap="Jin Kimchi: anatomy of the house style, mapped onto one frame"><img src="img/jin-kimchi.jpg" alt="Jin Kimchi short-form anatomy" loading="lazy"></button>
+        <div class="sc-body">
+          <div class="labels"><span class="label l-app">Assessment v2.3</span></div>
+          <h4>Jin Kimchi<span class="dot">.</span></h4>
+          <p class="who">Founder-led short-form for a Singapore kimchi brand: content that sells the jar without selling.</p>
+          <ul>
+            <li>Decoded six samples into one house formula: <b>Confession or Flex + Twist = Payoff</b></li>
+            <li>Three briefs, one afternoon each, with production gates</li>
+            <li>An idea engine in Notion: library → triage → brief → shoot → review</li>
+          </ul>
+          <div class="finding"><span class="mono">Role</span>Strategist behind the camera: research, briefs, direction, review.</div>
+        </div>
+      </article>
+      <article class="sc">
+        <button class="shot" data-cap="My Oahu Agent: a packaged Short and a save-worthy buyer carousel"><img src="img/oahu.jpg" alt="My Oahu Agent proposal samples" loading="lazy"></button>
+        <div class="sc-body">
+          <div class="labels"><span class="label l-app">Proposal</span></div>
+          <h4>My Oahu Agent<span class="dot">.</span></h4>
+          <p class="who">A social audit and 30-day plan for a Hawaii real estate team and its Living in Oahu channel.</p>
+          <ul>
+            <li>912 videos and 4.55K subscribers, but recent Shorts drew 6–943 views</li>
+            <li>Repurposing engine: 1 long-form tour → 3–5 Shorts × 3 platforms</li>
+            <li>Five levers, each with its own test</li>
+          </ul>
+          <div class="finding"><span class="mono">Finding</span>Not a content problem: <b>a library waiting to be packaged</b>.</div>
+        </div>
+      </article>
+      <article class="sc">
+        <button class="shot" data-cap="Psychology-led carousels: a caption teardown and why 50 million people open Duolingo every day"><img src="img/psych-duolingo.jpg" alt="Duolingo psychology carousel" loading="lazy"></button>
+        <div class="sc-body">
+          <div class="labels"><span class="label l-client">Own content</span></div>
+          <h4>The study behind the scroll<span class="dot">.</span></h4>
+          <p class="who">Two self-published carousels where I show my working. Each claim carries its source and a "how solid is it?" note.</p>
+          <ul>
+            <li><b>12 slides:</b> what 4 years of psychology taught me about writing captions</li>
+            <li><b>10 slides:</b> five retention principles read off one app screen</li>
+          </ul>
+          <div class="chips" style="margin-top:6px"><span>Self-reference effect</span><span>Concreteness</span><span>Foot-in-the-door</span><span>Loss aversion</span><span>Goal gradient</span></div>
+        </div>
+      </article>
+      <article class="sc wide">
+        <button class="shot" data-cap="Four pitches: Care & Bloom, Trident Digital, influencer marketing workflow, The Boardroom Cut"><img src="img/pitches.jpg" alt="Four pitch deck covers" loading="lazy"></button>
+        <div class="sc-body">
+          <div class="labels"><span class="label l-app">Pitch</span><span class="label l-con">Concept</span></div>
+          <h4>Same system, four different briefs<span class="dot">.</span></h4>
+          <p class="who">Each was tailored to one employer.</p>
+          <ul>
+            <li><b>Care &amp; Bloom</b> · 26 pp · one growth engine, distinct brand voices</li>
+            <li><b>Trident Digital</b> · 28 pp · positioning first, then the post</li>
+            <li><b>Influencer marketing</b> · weighted fit score, every quote converted to CPM</li>
+            <li><b>The Boardroom Cut</b> · podcast: one episode becomes a week of content</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="principles">
+      <div><span class="mono">01</span><b>Public data, dated</b><span>Every audit number carries the date I captured it.</span></div>
+      <div><span class="mono">02</span><b>"To confirm", not assumed</b><span>Where private analytics would change my answer, I say so.</span></div>
+      <div><span class="mono">03</span><b>Proposed ≠ result</b><span>Targets are labelled targets. Concepts are labelled concepts.</span></div>
+      <div><span class="mono">04</span><b>Check the table</b><span>If a brief's numbers don't add up, I recompute and flag it.</span></div>
+    </div>
+    <div class="path" aria-label="Brief, audit, insight, plan, create, measure">
+      <span>01 Brief</span><i></i><span>02 Audit</span><i></i><span>03 Insight</span><i></i><span>04 Plan</span><i></i><span>05 Create</span><i></i><span>06 Measure</span>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND -->
+<section class="page" id="brand">
+  <div class="wrap">
+    <div class="runhead"><span class="crumbs">River Geoff Jalalon / <b>Brand &amp; design</b></span><span>Self-initiated spec projects · figures are targets, not results</span></div>
+    <div class="eyebrow"><span class="idx">05</span><span class="mono">Brand &amp; design</span><span class="label l-con">Concept</span></div>
+    <div class="sec-head">
+      <h2>Feeds that feel like <span class="hl">the product</span><span class="dot">.</span></h2>
+      <p>Concept brands, a logo system, AI-directed product visuals and the editorial work where it all started.</p>
+    </div>
+    <div class="brand-grid">
+      <div class="bcard">
+        <div class="bcard-h"><h4>Haven Hotels</h4><span class="mono">12-post launch grid · 30-day calendar</span></div>
+        <div class="canvas"><button class="shot bare" data-cap="Haven Hotels: Check in. Slow down."><img src="img/haven.jpg" alt="Haven Hotels launch posts" loading="lazy"></button></div>
+        <div class="bmeta"><div><span class="mono">Brief</span>Lift direct weekend bookings</div><div><span class="mono">Mix</span>40% rooms · 25% experiences · 20% offers · 15% BTS</div><div><span class="mono">Target · 90 days</span>+30% booking-link taps · 2× saves</div></div>
+      </div>
+      <div class="bcard">
+        <div class="bcard-h"><h4>Meau Matcha</h4><span class="mono">Brand kit · 6 weeks</span></div>
+        <div class="canvas"><button class="shot bare" data-cap="Meau Matcha brand kit: a bowl ending in a peak of foam"><img src="img/meau.jpg" alt="Meau Matcha brand kit" loading="lazy"></button></div>
+        <div class="bmeta"><div><span class="mono">Idea</span>Sell the ritual, not the drink</div><div><span class="mono">Mark</span>A bowl ending in a peak of foam</div><div><span class="mono">Execution</span>Kit, 9-grid, 12 posts, 4 Reels, "first sip" launch</div></div>
+      </div>
+      <div class="bcard">
+        <div class="bcard-h"><h4>Eumora · The Threshold Mark</h4><span class="mono">Logo system</span></div>
+        <div class="canvas"><button class="shot bare" data-cap="Eumora: an E drawn like a floor plan. Three walls, two rooms and a door left open."><img src="img/eumora.jpg" alt="Eumora logo system" loading="lazy"></button></div>
+        <div class="bmeta"><div><span class="mono">Mark</span>The middle arm becomes the open door</div><div><span class="mono">Rules</span>Wall 1/10, door 4/10, swing a quarter circle</div><div><span class="mono">Tested</span>48, 28, 16px. The arc drops at 16px.</div></div>
+      </div>
+      <div class="bcard">
+        <div class="bcard-h"><h4>Little Garden</h4><span class="mono">AI-directed product concept</span></div>
+        <div class="canvas"><button class="shot bare" data-cap="Little Garden: a small garden, sewn into six pieces. AI-generated concept visuals created to my direction."><img src="img/little-garden.jpg" alt="Little Garden baby essentials concept" loading="lazy"></button></div>
+        <div class="bmeta"><div><span class="mono">My part</span>Visual direction, prompting, selection, presentation</div><div><span class="mono">System</span>One loud print, two quiet ones, six pieces</div><div><span class="mono">Extra</span>Two packaging routes</div></div>
+      </div>
+    </div>
+    <div class="case" style="margin-top:48px;border-top:1px solid var(--line);padding-bottom:0">
+      <div>
+        <span class="mono" style="color:var(--muted)">05.3 · Editorial &amp; print</span>
+        <h3 style="margin-top:10px;font-size:clamp(32px,3.8vw,46px)">Where it started: <span class="hl">layouts and posters</span><span class="dot">.</span></h3>
+        <div class="labels" style="margin-top:14px"><span class="label l-client">The Revolver · MaPsyA</span></div>
+        <p class="sub" style="margin-top:18px">Editor-in-Chief and layout artist for The Revolver (2019–2022), then creative head for MaPsyA. Years of designing to deadlines, every issue.</p>
+        <div class="rules" style="grid-template-columns:1fr 1fr;margin-top:20px">
+          <div class="rule"><b>Hierarchy that survives a skim</b></div>
+          <div class="rule"><b>Headlines that do the work</b></div>
+          <div class="rule"><b>Designing to deadlines</b></div>
+          <div class="rule"><b>Research people actually share</b></div>
+        </div>
+      </div>
+      <button class="shot" data-cap="Editorial and print: Raging Forces, school sports, physical disorders, agricultural extension"><img src="img/editorial.jpg" alt="Editorial layouts and posters" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="page" id="process">
+  <div class="wrap">
+    <div class="runhead"><span class="crumbs">River Geoff Jalalon / <b>How I work</b></span><span>Daily replies · weekly readout · monthly pillar review · quarterly reset</span></div>
+    <div class="eyebrow"><span class="idx">06</span><span class="mono">Process</span></div>
+    <div class="sec-head">
+      <h2>Pick the goal first. Then the metric, <span class="hl">the baseline and the change</span><span class="dot">.</span></h2>
+      <p>Clear stages and clear approvals, so you always know where your content stands. Every month ends with a report like the ones on this page.</p>
+    </div>
+    <div class="steps">
+      <div><span class="mono">01</span><b>Audit &amp; baseline</b><span>Export Insights, review the profile and competitors.</span></div>
+      <div><span class="mono">02</span><b>Pillars &amp; voice</b><span>What the brand posts about and how it sounds.</span></div>
+      <div><span class="mono">03</span><b>Plan the grid</b><span>Pillars and formats on the calendar and the 3 × 3.</span></div>
+      <div><span class="mono">04</span><b>Design &amp; write</b><span>Art direction, captions, scheduling, replies.</span></div>
+      <div><span class="mono">05</span><b>Report &amp; repeat</b><span>Turn the winners into series.</span></div>
+    </div>
+    <div class="proc-grid">
+      <div class="pbox">
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline"><h4>Goal → metric</h4><span class="mono" style="font-size:10.5px;color:var(--muted)">Likes and raw views are context, never the verdict</span></div>
+        <div class="scroll-x"><table style="min-width:440px;margin-top:6px">
+          <thead><tr><th>Goal</th><th>What I read</th><th>Primary</th></tr></thead>
+          <tbody>
+            <tr><td><b>Awareness</b><br><small style="color:var(--muted)">Did new people see it, and stay?</small></td><td>Reach, non-follower reach %, 3-sec hold, watch time</td><td><span class="pill">Watch time</span></td></tr>
+            <tr><td><b>Consideration</b><br><small style="color:var(--muted)">Did they value it?</small></td><td>Saves and sends per 1K reach, profile visits → follows</td><td><span class="pill">Saves + sends</span></td></tr>
+            <tr><td><b>Conversion</b><br><small style="color:var(--muted)">Did they act?</small></td><td>Link clicks, UTM sessions, sign-ups, sales</td><td><span class="pill r">Qualified action</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="pbox blue">
+        <span class="mono">How I set the baseline</span>
+        <ul>
+          <li>Same account, metric and window length. A 27-day window is never compared with a 5-month one as if they were equal.</li>
+          <li>The benchmark is the median of the last 10 posts in the same format, so one viral post can't skew it.</li>
+          <li>Rates, not totals: saves per 1K reach, follows per 1K impressions.</li>
+          <li>Single posts read at 7 days. Cadence or format changes get 4–6 weeks.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ifthen">
+      <div><span class="mono">If</span><b>Strong 3-sec hold, weak watch time</b><span><em>THEN</em>cut tighter and move the payoff earlier.</span></div>
+      <div><span class="mono">If</span><b>High reach, few saves or sends</b><span><em>THEN</em>add a checklist slide or a send-to-a-friend prompt.</span></div>
+      <div><span class="mono">If</span><b>Loyal engagement, slow follows</b><span><em>THEN</em>a sharper hook and a "why follow" line.</span></div>
+      <div><span class="mono">If</span><b>People watch but don't respond</b><span><em>THEN</em>polls and question stickers, re-read in 2 weeks.</span></div>
+    </div>
+    <div style="margin-top:40px">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:14px">
+        <div><div class="eyebrow" style="margin-bottom:8px"><span class="idx">06.2</span><span class="mono">Content calendar</span><span class="label l-con">Concept</span></div><h3 style="font-size:clamp(28px,3.4vw,40px)">A month <span class="hl">with a purpose</span><span class="dot">.</span></h3></div>
+        <div class="stats num" style="grid-template-columns:repeat(4,auto);border:0;gap:28px">
+          <div class="stat" style="border:0;padding:0"><b style="font-size:28px">15</b><span>posts</span></div>
+          <div class="stat" style="border:0;padding:0"><b style="font-size:28px">4</b><span>stages</span></div>
+          <div class="stat" style="border:0;padding:0"><b style="font-size:28px">1</b><span>CTA per post</span></div>
+          <div class="stat" style="border:0;padding:0"><b style="font-size:28px">Wk 5</b><span>review</span></div>
+        </div>
+      </div>
+      <div class="canvas"><button class="shot bare" data-cap="STILL Ritual Set launch: March calendar from discovery to purchase. Proposed plan, not client results."><img src="img/calendar.jpg" alt="March content calendar for the STILL ritual set" loading="lazy"></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="page" id="about">
+  <div class="wrap">
+    <div class="runhead"><span class="crumbs">River Geoff Jalalon / <b>Profile</b></span><span>Education, awards and languages as stated in my CV</span></div>
+    <div class="eyebrow"><span class="idx">01</span><span class="mono">About</span></div>
+    <div class="about">
+      <div>
+        <h2>Psychology tells me why people stop. <span class="hl">Design makes them stay</span><span class="dot">.</span></h2>
+        <div class="copy">
+          <p>Four years of hands-on work and <strong>10+ clients and brands</strong>: freelance writing, design and brand accounts since 2022, nearly two years running a café brand's social channels, and remote contracts with a UK doctor-led clinic and a US clinical AI company.</p>
+          <p>I own the full content cycle: research, calendars, copywriting, design, short-form video, paid social, influencer outreach, community and analytics. Years as Editor-in-Chief taught me to ship clean work on deadline with minimal supervision.</p>
+        </div>
+        <div class="otc"><span class="mono">Off the clock</span><p>I write poems and make matcha at home in a little slow bar of my own.</p><small>Writing shapes how I design.</small></div>
+
+        <div class="listbox" style="margin-top:28px">
+          <span class="mono">Services</span>
+          <div class="chips" style="margin-top:6px"><span>Social design</span><span>Carousels</span><span>Reels &amp; short-form</span><span>Product &amp; brand video</span><span>Feed layout</span><span>Brand kits</span><span>Campaigns</span><span>Paid social</span><span>Calendar &amp; reporting</span></div>
+          <div class="row" style="margin-top:14px;grid-template-columns:1fr"><span><b>The caption backbone:</b> Hook (their words) → Relate (feel seen) → Value (free help) → Trust (real proof) → <span style="color:var(--red);font-weight:600">CTA (one action)</span></span></div>
+        </div>
+      </div>
+      <div class="side-cards">
+        <div class="mini-stats num">
+          <div class="ms"><span class="mono">Clients</span><b>10+</b></div>
+          <div class="ms"><span class="mono">Platforms</span><b>8</b></div>
+          <div class="ms"><span class="mono">Certs</span><b>8</b></div>
+        </div>
+        <div class="listbox">
+          <span class="mono">Platforms managed</span>
+          <div class="plats" style="margin-top:8px"><span>IG</span><span>TT</span><span>YT</span><span>in</span><span>FB</span><span>X</span><span>Th</span><span>Ss</span></div>
+        </div>
+        <div class="listbox">
+          <span class="mono">Profile</span>
+          <div class="row"><span><b>BS Psychology</b>, Mapúa Malayan Colleges Mindanao<br><small style="font-family:var(--f-body);font-size:13px">President's Lister 2025–2026 · Dean's Lister 2022–2025</small></span><small>2022–2026</small></div>
+          <div class="row"><span>Group thesis leader, <i>The Ripple Effect of Inaccessibility</i> · IIARI 2026 finalist</span><small>Thesis</small></div>
+          <div class="row"><span><b>English</b> fluent, TOEIC certified · <b>Filipino</b> native</span><small>Languages</small></div>
+        </div>
+        <div class="listbox">
+          <span class="mono">Awards</span>
+          <div class="row"><span><b>Finalist</b>, IIARI International Research Competition</span><small>Aug 2026</small></div>
+          <div class="row"><span><b>Most Exemplary Work Output Award</b> (Overall), BS Psychology internships</span><small>Jul 2026</small></div>
+          <div class="row"><span><b>DSWD XI Choice Award</b></span><small>Jul 2026</small></div>
+          <div class="row"><span><b>First Runner-Up</b>, Poem-Making</span><small>Nov 2025</small></div>
+          <div class="row"><span><b>Best Speaker</b>, Group Dynamics</span><small>Sep 2025</small></div>
+        </div>
+        <div class="listbox">
+          <span class="mono">Certifications</span>
+          <div class="row"><span>Social Media Marketing</span><small>Meta via Coursera · 2025</small></div>
+          <div class="row"><span>Social Media Marketing</span><small>HubSpot · 2026</small></div>
+          <div class="row"><span>Content Marketing</span><small>HubSpot · 2025</small></div>
+          <div class="row"><span>Digital Marketing &amp; E-commerce</span><small>Google · 2026</small></div>
+          <div class="row"><span>TikTok Academy</span><small>TikTok · 2025</small></div>
+          <div class="row"><span>Hootsuite Platform</span><small>Hootsuite · 2025</small></div>
+          <div class="row"><span>TOEIC, English proficiency</span><small>ETS · Feb 2026</small></div>
+          <div class="row"><span>Questionnaire Design for Social Surveys</span><small>U. of Michigan · 2025</small></div>
+        </div>
+        <div class="listbox tools">
+          <span class="mono">Tools by job</span>
+          <div class="row"><span>Design</span><div class="chips"><span>Canva</span><span>CapCut</span><span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>Procreate</span></div></div>
+          <div class="row"><span>Ads &amp; posting</span><div class="chips"><span>Meta Business Suite</span><span>Ads Manager</span><span>Later</span><span>Buffer</span><span>Hootsuite</span><span>Metricool</span></div></div>
+          <div class="row"><span>Analytics</span><div class="chips"><span>Meta Insights</span><span>TikTok Analytics</span><span>YouTube Studio</span><span>GA4</span></div></div>
+          <div class="row"><span>CRM &amp; workflow</span><div class="chips"><span>HubSpot</span><span>GoHighLevel</span><span>Notion</span><span>Monday.com</span><span>Asana</span><span>Trello</span><span>Slack</span><span>Google Workspace</span><span>Microsoft 365</span></div></div>
+          <div class="row"><span>AI</span><div class="chips"><span>Claude</span><span>ChatGPT</span><span>Gemini</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CV -->
+<section class="page" id="cv">
+  <div class="wrap">
+    <div class="runhead"><span class="crumbs">River Geoff Jalalon / <b>Experience</b></span><span>Full CV · references available upon request</span></div>
+    <div class="eyebrow"><span class="idx">07</span><span class="mono">Experience</span></div>
+    <div class="sec-head">
+      <h2>From a matcha bar to <span class="hl">UK and US clients</span><span class="dot">.</span></h2>
+      <p>Freelance work since 2022, nearly two years running Sonder's social onsite, then two remote contracts at once. Underneath it all: editorial layout since 2019.</p>
+    </div>
+    <div class="xp">
+      <div><span class="mono">Aug – Oct 2026 · Remote contract</span><h4>The Wellness London</h4><div class="org">Doctor-led health clinic · UK</div><div class="role">New Media &amp; Content Executive</div>
+        <ul><li>IG interaction rate 1.68% → 3.26% in one month; reach +65%</li><li>Paid social reaching 40,000+ accounts at 1.9% CTR</li><li>12+ posts a week across IG, TikTok, YouTube, LinkedIn</li><li>25+ carousels, 15+ short videos, 8 weekly reports, GA4 conversion tracking</li></ul></div>
+      <div><span class="mono">Aug – Oct 2026 · Remote contract</span><h4>Wai</h4><div class="org">Healthcare &amp; clinical AI · United States</div><div class="role">New Media &amp; Content Executive</div>
+        <ul><li>B2B LinkedIn: 15,000+ impressions at 4.2% engagement</li><li>10+ A/B tests lifted open rates 32% → 48%</li><li>80+ creators pitched, 25% reply, 6 qualified leads</li></ul></div>
+      <div><span class="mono">Oct 2024 – Aug 2026 · Onsite</span><h4>Sonder Matcha</h4><div class="org">Home matcha station · Rosario, Agusan del Sur</div><div class="role">Social Media Manager</div>
+        <ul><li>IG followers 350 → 1,200 (+240%); FB +150%</li><li>10+ Meta Ads campaigns, 25,000+ reach at 2.4% CTR</li><li>12 influencer collabs, 20,000+ views</li><li>60+ short videos and 150+ graphics; 50+ messages a week answered within 2 hours</li></ul></div>
+      <div><span class="mono">2022 – 2025 · Project-based</span><h4>Freelance</h4><div class="org">Small businesses, personal brands, local orgs</div><div class="role">Social Media &amp; Creative Specialist</div>
+        <ul><li>Brand accounts: content, scheduling, captions, replies</li><li>Graphics, carousels, posters and brand materials</li><li>Copy in English and Filipino, while studying full time</li></ul></div>
+    </div>
+
+    <div class="gantt">
+      <div class="gantt-h"><h4>Timeline, 2019–2026</h4>
+        <div class="legend"><span><i style="background:var(--ink)"></i>Social role</span><span><i style="background:var(--blue)"></i>Remote contract</span><span><i style="background:var(--red)"></i>Internship</span><span><i style="background:#8FA0F5"></i>Leadership</span><span><i style="background:var(--grey-tag)"></i>Education</span></div>
+      </div>
+      <div class="scroll-x"><div class="g-inner" id="gantt"></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span class="idx" style="background:#E63B2E">08</span><span class="mono" style="color:#fff">Contact</span></div>
+      <h2>Let's work together<span class="dot">.</span></h2>
+      <p class="intro">Send a short note about your brand, your goals and your timeline. I'm open to remote, hybrid and onsite roles in social media, digital marketing and creative strategy. Full decks, strategies and video files from any project here are available on request, sent as view-only links within two working days.</p>
+      <div class="chips"><span>Feed planning</span><span>Post &amp; carousel design</span><span>Reels</span><span>Brand kits</span><span>Insights reporting</span><span>Paid social plans</span></div>
+      <div class="cstats num">
+        <div><b>3</b><span>client accounts measured in Insights</span></div>
+        <div><b>10+</b><span>clients and brands supported</span></div>
+        <div><b>6</b><span>formats taken apart in the anatomy series</span></div>
+        <div><b>2 days</b><span>to reply or send a requested file</span></div>
+      </div>
+    </div>
+    <div class="ccard">
+      <div class="ccard-h"><img src="img/portrait.jpg" alt="" width="62" height="62"><div><b>River Geoff C. Jalalon</b><small>Social media &amp; brand content · Available</small></div></div>
+      <div class="cline"><div><span class="mono">Email</span><a href="mailto:hi.rgworks@gmail.com">hi.rgworks@gmail.com</a></div><button class="copy-btn" data-copy="hi.rgworks@gmail.com">Copy</button></div>
+      <div class="cline"><div><span class="mono">Instagram</span><a href="https://instagram.com/rvg.works" target="_blank" rel="noopener">@rvg.works ↗</a></div></div>
+      <div class="cline"><div><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/river-geoff-jalalon-4869602b5" target="_blank" rel="noopener">river-geoff-jalalon ↗</a></div></div>
+      <div class="cline"><div><span class="mono">Phone</span><span class="val">+63 945 780 0905</span></div><button class="copy-btn" data-copy="+63 945 780 0905">Copy</button></div>
+      <div class="cline" style="border-bottom:0"><div><span class="mono">Location</span><span class="val" style="user-select:text">Davao City, Philippines · GMT+8</span></div></div>
+      <a class="btn btn-red" href="mailto:hi.rgworks@gmail.com?subject=Project%20enquiry">Send a note <span>→</span></a>
+      <a class="btn btn-ghost" href="mailto:hi.rgworks@gmail.com?subject=File%20request" style="color:#0E1530;margin-top:10px">Request a full file <span>→</span></a>
+      <p class="note">To request a file, name the project. Flexible on UK, US and AU hours.</p>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 River Geoff C. Jalalon</span><span>Social media &amp; digital marketing · Davao City, PH</span></div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image preview">
+  <button type="button" id="lbClose">Close ✕</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</div>
+
+<script>
+(function(){
+  // Lightbox
+  var lb=document.getElementById('lb'),img=document.getElementById('lbImg'),cap=document.getElementById('lbCap'),last=null;
+  function open(src,text){img.src=src;img.alt=text||'';cap.textContent=text||'';lb.hidden=false;document.getElementById('lbClose').focus()}
+  function close(){lb.hidden=true;img.removeAttribute('src');if(last)last.focus()}
+  document.querySelectorAll('.shot, .anat').forEach(function(el){
+    if(el.tagName!=='BUTTON')return;
+    el.type='button';
+    el.addEventListener('click',function(){last=el;var src=el.dataset.src||el.querySelector('img').getAttribute('src');open(src,el.dataset.cap)});
+  });
+  document.getElementById('lbClose').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)close()});
+
+  // Copy buttons
+  function toast(t){var d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove()},1800)}
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var v=b.dataset.copy;
+      try{navigator.clipboard.writeText(v).then(function(){toast('Copied '+v)},function(){sel(b)})}catch(e){sel(b)}
+    });
+  });
+  function sel(b){var t=b.parentNode.querySelector('a,.val');if(!t)return;var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r);toast('Selected. Press Ctrl/Cmd + C to copy')}
+
+  // Gantt timeline, 2019.0 to 2027.0
+  var rows=[
+    ['The Revolver · Editor-in-Chief',2019,2022,'#8FA0F5'],
+    ['Senior High · Valedictorian',2020,2022,'var(--grey-tag)'],
+    ['BS Psychology · Mapúa MCM',2022,2026.4,'var(--grey-tag)'],
+    ['Freelance · social & creative',2022,2025.9,'var(--ink)'],
+    ['MaPsyA · Creative head',2023,2024,'#8FA0F5'],
+    ['Sonder Matcha · Social media manager',2024.75,2026.62,'var(--ink)'],
+    ['Tebow CURE · HR & recruitment intern',2026.25,2026.58,'var(--red)'],
+    ['DSWD XI · Psychology intern',2026.33,2026.58,'var(--red)'],
+    ['The Wellness London · UK contract',2026.58,2026.83,'var(--blue)'],
+    ['Wai · US contract',2026.58,2026.83,'var(--blue)']
+  ];
+  var S=2019,E=2027,g=document.getElementById('gantt');
+  function pct(y){return ((y-S)/(E-S)*100).toFixed(2)+'%'}
+  var ax='<div class="g-axis"><span></span><div class="ticks">';
+  for(var y=S;y<E;y++)ax+='<span style="left:'+pct(y)+'">'+y+'</span>';
+  g.innerHTML=ax+'</div></div>'+rows.map(function(r){
+    return '<div class="g-row"><span>'+r[0].replace(/&/g,'&amp;')+'</span><div class="g-lane"><i style="left:'+pct(r[1])+';width:calc('+pct(r[2])+' - '+pct(r[1])+');background:'+r[3]+'"></i></div></div>';
+  }).join('');
+})();
+</script>
+
+</html>
